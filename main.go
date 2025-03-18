@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/ngsalvo/datastar-rick-and-morty/components"
+	"github.com/ngsalvo/datastar-rick-and-morty/web/pages"
 )
 
 func main() {
@@ -26,5 +26,5 @@ func main() {
 func homeHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 
-	components.Home().Render(r.Context(), w)
+	pages.Home().Render(r.Context(), w)
 }
