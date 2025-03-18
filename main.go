@@ -7,8 +7,7 @@ import (
 	"os"
 
 	"github.com/go-chi/chi/v5"
-
-	"github.com/ngsalvo/roadmapsh-project-name/components"
+	"github.com/ngsalvo/datastar-rick-and-morty/components"
 )
 
 func main() {

@@ -4,7 +4,7 @@ env:
   STATIC_DIR: 'static/styles'
 
 vars:
-  NAME: 'rick-and-morty'
+  NAME: 'RICK_AND_MORTY'
   VERSION: 'v0.0.1'
   TEMPL_VERSION: 'v0.3.819'
   AIR_VERSION: 'v1.61.5'
@@ -18,7 +18,7 @@ tasks:
 
   build:styles:
     cmds:
-      - pnpm dlx tailwindcss -c tailwind.config.js -i $STATIC_DIR/main.css -o $STATIC_DIR/styles.css
+      - pnpm dlx tailwindcss@3.4.17 -c tailwind.config.js -i $STATIC_DIR/main.css -o $STATIC_DIR/styles.css
 
   build:
     cmds:
@@ -41,7 +41,7 @@ tasks:
 
   live:styles:
     cmds:
-      - pnpm dlx tailwindcss -c tailwind.config.js -i $STATIC_DIR/main.css -o $STATIC_DIR/styles.css --watch
+      - pnpm dlx tailwindcss@3.4.17 -c tailwind.config.js -i $STATIC_DIR/main.css -o $STATIC_DIR/styles.css --watch
 
   live:server:
     cmds:
