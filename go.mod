@@ -1,4 +1,4 @@
-module github.com/ngsalvo/roadmapsh-project-name
+module github.com/ngsalvo/datastar-rick-and-morty
 
 go 1.23.3
 
